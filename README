@@ -26,4 +26,4 @@ Move to folder path database:
 Start Flask with the command:
 
 1. flask run
-2. ir a la ip http://127.0.0.1:5000/api/v1/doc
+2. Go the ip http://127.0.0.1:5000/api/v1/doc
