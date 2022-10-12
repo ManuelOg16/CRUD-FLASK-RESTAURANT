@@ -18,20 +18,20 @@ class OrdersModel(db.Model):
         self.status = data.get('status')
     
 
-    # POST PARA CREAR ALGO EN LA DB
+    # INSERT IN DB
     def save(self):
         db.session.add(self)
         db.session.commit()
         db.session.flush()
         return self.id
 
-    # PARA ACTUALIZAR ALGO EN LA DB
+    # UPDATE IN DB
     def update(self, data):
         for key, item in data.items():
             setattr(self, key, item)
         db.session.commit()
 
-    #PARA BORRAR ALGO EN LA DB
+    # DELETE IN DB
     def delete(self):
         db.session.delete(self)
         db.session.commit()
