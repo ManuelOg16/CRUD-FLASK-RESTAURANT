@@ -17,7 +17,7 @@ def create_app():
 
     db.init_app(app)
 
-    ###rutas
+    ###Routes
     bluePrint = Blueprint('api', __name__, url_prefix='/api/v1')
     api = Api(bluePrint, doc='/doc', version='1.0', title='Restaurant Configuration API', description='Swagger para Restaurant Configuration API')
     api.add_namespace(ns=nsorder)
