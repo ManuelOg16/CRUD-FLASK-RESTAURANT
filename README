@@ -1,0 +1,9 @@
+CREACIÓN DE LAS TABLAS
+1. POSICIONARSE EN LA RUTA DE LA CARPETA database
+2. EN EL ARCHIVO schema.sql adicionar los comandos sql para crear las TABLAS o nuevos campos
+3. En la rutaq en databse ejecutar  --- python init_db.py
+
+
+Arrancar el back end 
+1. flask run
+2. ir a la ip http://127.0.0.1:5000/api/v1/doc
